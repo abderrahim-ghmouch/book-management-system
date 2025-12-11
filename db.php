@@ -8,7 +8,7 @@ $password="abdoabdo";
 
 try{
     $dbase=new PDO ("mysql:host=$host;dbname=$db;charset=utf8",$username,$password);
-    echo "connected";
+
 }
 catch(PDOException $i)
 {
