@@ -13,8 +13,8 @@ try {
   $status = $statement->execute([$title, $author, $published, $is_read, $id]);
  
     if($status) {
-
-        header("Location: view.php");
+   header("Location: view.php");
+     
         exit(); 
     } else {
         echo "Update failed!";

@@ -71,12 +71,13 @@ require_once "db.php";
                                     ✏️ Edit
                                 </button>
                                 
-                                <!-- Delete Button -->
-                                <a href="del.php?id=<?php echo $book['id']; ?>" 
-                            
-                                   class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
-                                    🗑️ Delete
-                                </a>
+                               <form action="del.php" method="POST" style="display: inline;">
+    <input type="hidden" name="id" value="<?php echo $book['id']; ?>">
+    <button type="submit"   
+            class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">
+        🗑️ Delete
+    </button>
+</form>
                             </div>
                         </td>
                     </tr>
