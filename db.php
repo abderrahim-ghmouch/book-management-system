@@ -12,8 +12,7 @@ try{
 }
 catch(PDOException $i)
 {
-echo "errorin connection";
-$i -> getMessage();
+echo "errorin connection".$i->getMessage();
 }
 
-?>
+    ?>

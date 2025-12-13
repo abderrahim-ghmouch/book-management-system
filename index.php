@@ -23,8 +23,11 @@ require_once"db.php" ;
       <p class="text-cyan-100">Add and manage your book collection</p>
     </header>
 
-    <!-- Main Form Container -->
+
+
     <main class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-2xl">
+
+
       
       <form action="add.php" method="POST" class="space-y-6">
         
@@ -67,26 +70,9 @@ require_once"db.php" ;
               class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
             >
           </div>
-
-          <!-- Genre -->
-          <div class="space-y-2">
-            <label class="block text-gray-700 font-medium">Genre</label>
-            <select 
-              name="genre"
-              class="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-500"
-            >
-              <option value="">Select a genre</option>
-              <option value="Fiction">Fiction</option>
-              <option value="Non-Fiction">Non-Fiction</option>
-              <option value="Programming">Programming</option>
-              <option value="Fantasy">Fantasy</option>
-              <option value="Mystery">Mystery</option>
-            </select>
-          </div>
-
+    
         </div>
 
-        <!-- Read Status -->
         <div class="flex items-center space-x-3">
           <input 
             type="checkbox" 
@@ -95,6 +81,7 @@ require_once"db.php" ;
             class="h-5 w-5 text-blue-600"
           >
           <label class="text-gray-700">I have read this book</label>
+    
         </div>
 
         <!-- Submit Button -->
